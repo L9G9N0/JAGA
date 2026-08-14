@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark-blue: #1C3676;
+  --color-primary-blue: #50AEEE;
+  --color-light-devotional-blue: #A5EAFF;
+  --color-secondary-blue: #3E4AAA;
+  --color-deepest-blue: #0D1D7B;
+  --color-parchment: #FAF6EE;
+  --color-parchment-dark: #FCF8F2;
+  --color-saffron: #FF9933;
+}
+
+:root {
+  --background: #FAF6EE;
+  --foreground: #1C3676;
+}
+
+body {
+  background-color: #FAF6EE;
+  color: #1C3676;
+  font-family: var(--font-lora), Georgia, serif;
+}
+
+/* Devotional Decorative Utilities */
+.devotional-border-double {
+  border-style: double;
+  border-width: 4px;
+  border-color: #1C3676;
+}
+
+.devotional-border-single {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1C3676;
+}
+
+.devotional-card {
+  background-color: #FCF8F2;
+  border: 1px solid #1C3676;
+  padding: 1.5rem;
+}
+
+.devotional-header-font {
+  font-family: var(--font-cinzel), serif;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
