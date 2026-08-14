@@ -132,10 +132,15 @@ The project requires the following environment configurations:
     *   `Submission after 45 minutes exceeds deadline and is LATE`: **PASS**
     *   `Report submitted at 7:30 PM is COMPLETED`: **PASS**
     *   `Report submitted at 10:15 PM is LATE`: **PASS**
+    *   `Generates correct YouTube thumbnail URL`: **PASS**
     *   `RLS role validation database helper function executes`: **PASS**
-    *   `Seeded schedule configurations exist in the DB`: **PASS**
-    *   `Seeded devotional content exists in the DB`: **PASS**
-    *   `Seeded initial lectures exist in the DB`: **PASS**
+    *   `Default role trigger defaults profile role to pending_devotee and blocks metadata role-spoofing`: **PASS**
+    *   `Role escalation trigger prevents unauthorized role updates`: **PASS**
+    *   `Devotional content table has no duplicate titles (deduplication check)`: **PASS**
+    *   `Bhoga Offering Procedure exists and is readable`: **PASS**
+    *   `All 29 required lecture categories are represented in the database`: **PASS**
+    *   `RLS policies isolate devotee records (mala_records and daily_reports) to their owner profile_id`: **PASS**
+    *   `Row-Level Security (RLS) is enabled on all 10 core JAGA tables`: **PASS**
 
 *   **Production Build Check (`npm run build`):**
     *   *Result:* Compiled successfully. Zero errors.
